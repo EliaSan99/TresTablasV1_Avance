@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: #748dfe;
+}
+
+h1
+{
+ color:#fff;    
+ font-weight: bolder;
+ 
+}
+.wrapper
+{
+  display: flex;
+  flex-direction: row;
+}
+#new
+{
+  margin: 1rem 1rem 1rem 28rem;
+  font-weight: bold
+}
+#a2
+{
+ margin: 1rem  1rem  1rem;
+ font-weight: bold;
+}
+
+thead th
+{
+ text-align: center;
+}
+tbody td
+{
+ text-align: center;    
+}
