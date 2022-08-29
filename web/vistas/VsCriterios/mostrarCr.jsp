@@ -13,20 +13,59 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                 <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="./publico/css/bootstrap.min.css">
         <link rel="stylesheet" href="./publico/css/mostrarCr.css">
         <title>Criterios de evaluación</title>
     </head>
     <body>
-        <form id="formAlumnos" action="STipoactvs" method="POST">
-            <h1 class="text-center m-4">Criterios de Evaluación</h1>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar  navbar-expand-lg navbar-dark mb-2">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./publico/imgs/uni.png" width="35" height="35" class="mx-2">
+                            Interfaz Actividades
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SIndex">Home
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SAlumnos">Alumnos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SActividades">Actividades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="STipoactvs">Criterios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="session-box">
+                            <img src="./publico/imgs/user.svg" width="40px" height="40px" alt="">
+
+                            <div>
+                                <h5>Usuario:</h5>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <form id="formCriterios" action="STipoactvs" method="POST">
+            <h4 class="text-center m-4">Criterios de Evaluación</h4>
             
             <div class="wrapper">
                 <a id="new" class="btn btn-secondary" href="#" onclick="procesar('nuevo','')">Nuevo registro</a>
                 <a id="a2"  class="btn btn-secondary" href="SIndex">Ir a vista principal</a>
             </div>
             
-                        <div class="container">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-auto mt-1">
                         <table class="table table-bordered table-hover table-dark">
@@ -44,7 +83,7 @@
                                     ArrayList<BnCriterios> listCriterios = daocriterios.mostrar();
                                     BnCriterios criterios = null;
                                     for (int i = 0; i < listCriterios.size(); i++) {
-                                    criterios = listCriterios.get(i);
+                                        criterios = listCriterios.get(i);
 
                                 %>
                                 <tr>
@@ -76,7 +115,7 @@
                 tfIdactv.type="hidden";
                 tfIdactv.value=idactv;
                 
-                var padre = document.getElementById("formAlumnos");
+                var padre = document.getElementById("formCriterios");
                 padre.appendChild(tfAccion);
                 padre.appendChild(tfIdactv);
                 

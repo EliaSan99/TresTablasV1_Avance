@@ -49,7 +49,7 @@ public class DAOCriterios
   
   public boolean agregar(BnCriterios criterios)      
   {
-     String sql="INSERT INTO tipo_actividad values("  +
+     String sql="INSERT INTO tipo_actividad VALUES("  +
                      criterios.getIdactv()    +  ","  + 
               "'" +  criterios.getTipoactv()  +  "'," +
                      criterios.getPorcentaje()+  ")";
@@ -95,7 +95,7 @@ public class DAOCriterios
              "Id_TipoActv = "  + criterios.getIdactv()     + ","  +
              "Tipo_Actv   = '" + criterios.getTipoactv()   + "'," +
              "Porcentaje  = "  + criterios.getPorcentaje() + 
-             "WHERE Id_TipoActv = " + Old;
+             " WHERE Id_TipoActv = " + Old;
       
       try
       {

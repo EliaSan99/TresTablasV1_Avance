@@ -60,7 +60,7 @@ public class STipoactvs extends HttpServlet
             criterios = new BnCriterios();
             int idactvOld = Integer.parseInt(request.getParameter("tfIdactvOld")); 
             
-            criterios = new BnCriterios();
+            
             criterios.setIdactv(Integer.parseInt(request.getParameter("tfIdactv")));
             criterios.setTipoactv(request.getParameter("tfTipoactv"));
             criterios.setPorcentaje(Integer.parseInt(request.getParameter("tfPorcentaje")));
@@ -71,7 +71,7 @@ public class STipoactvs extends HttpServlet
             
         }else if(accion!=null && accion.equalsIgnoreCase("eliminar"))
         {
-            int idactv = Integer.parseInt(request.getParameter("tfIdactvOld"));
+            int idactv = Integer.parseInt(request.getParameter("tfIdactv"));
             daoC = new DAOCriterios();
             daoC.eliminar(idactv);
             acceso=mostrarCr;

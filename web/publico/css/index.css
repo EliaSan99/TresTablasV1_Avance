@@ -1,0 +1,59 @@
+*
+{
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#session-box
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#session-box>img
+{
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.5rem;
+}
+
+h5
+{
+ color:#fff;    
+ font-size:1em;
+ font-weight: bolder;
+ margin-top:0.5rem;
+}
+
+#session-box div small input
+{
+ display: inline-block;
+ color: #fff;
+}
+
+#session-box input
+{
+  padding: 0;
+  border: none; 
+  background: none;
+}
+
+h2
+{
+ color:#fff;    
+ font-weight: bolder;
+ margin-top: 2rem;
+}
+
+#fila-cards
+{
+ margin-top: 2rem;
+ margin-left: 3.5rem;     
+}
+
+
+

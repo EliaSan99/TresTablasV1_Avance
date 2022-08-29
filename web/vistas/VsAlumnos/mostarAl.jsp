@@ -1,4 +1,4 @@
-+<%-- 
+<%-- 
     Document   : mostarAl
     Created on : 7/08/2022, 04:09:23 PM
     Author     : EliasSan
@@ -13,13 +13,52 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="./publico/css/bootstrap.min.css">
         <link rel="stylesheet" href="./publico/css/mostrarAl.css">
         <title>Vista Alumnos</title>
     </head>
     <body>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <nav class="navbar  navbar-expand-lg navbar-dark mb-2">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./publico/imgs/uni.png" width="35" height="35" class="mx-2">
+                            Interfaz Alumnos
+                        </a>
+
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SIndex">Home
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SAlumnos">Alumnos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="SActividades">Actividades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="STipoactvs">Criterios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="session-box">
+                            <img src="./publico/imgs/user.svg" width="40px" height="40px" alt="">
+
+                            <div>
+                                <h5>Usuario:</h5>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
         <form id="formAlumnos" action="SAlumnos" method="POST">
-            <h1 class="text-center m-4">Lista de alumnos</h1>
+            <h4 class="text-center m-4">Lista de alumnos</h4>
             
             <div class="wrapper">
                 <a id="new" class="btn btn-secondary" href="#" onclick="procesar('nuevo','')">Nuevo registro</a>
